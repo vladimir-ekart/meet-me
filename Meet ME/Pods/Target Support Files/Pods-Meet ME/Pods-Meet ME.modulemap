@@ -1,0 +1,6 @@
+module Pods_Meet_ME {
+  umbrella header "Pods-Meet ME-umbrella.h"
+
+  export *
+  module * { export * }
+}

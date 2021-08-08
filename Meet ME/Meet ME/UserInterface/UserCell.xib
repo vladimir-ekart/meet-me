@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" id="KGk-i7-Jjw" customClass="UserCell" customModule="Meet_ME" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-hf-7IS">
+                        <rect key="frame" x="15" y="0.0" width="290" height="44"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-9c-QB4">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="35"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9x-d2-3xn">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <action selector="inputTextFieldEditingChanged:" destination="KGk-i7-Jjw" eventType="editingChanged" id="taT-pa-iac"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-f7-CAP">
+                                        <rect key="frame" x="255" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="8A9-wb-b8H"/>
+                                            <constraint firstAttribute="width" secondItem="0e9-f7-CAP" secondAttribute="height" multiplier="1:1" id="IOf-f5-phK"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <imageReference key="image" image="person.crop.circle.badge.plus" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addTouched:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GUE-V2-hzC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="b9x-d2-3xn" firstAttribute="top" secondItem="Wae-9c-QB4" secondAttribute="top" id="oEm-TT-WjG"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="miV-aT-wpL">
+                                <rect key="frame" x="0.0" y="35" width="290" height="9"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8B-Zb-6mF">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="9"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Re3-gc-fhe">
+                                        <rect key="frame" x="270" y="0.5" width="20" height="8"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wae-9c-QB4" firstAttribute="centerX" secondItem="4ce-hf-7IS" secondAttribute="centerX" id="HrZ-eL-hzY"/>
+                            <constraint firstItem="miV-aT-wpL" firstAttribute="leading" secondItem="4ce-hf-7IS" secondAttribute="leading" id="SRz-WJ-t9O"/>
+                            <constraint firstItem="miV-aT-wpL" firstAttribute="centerX" secondItem="4ce-hf-7IS" secondAttribute="centerX" id="Yrq-Kd-JZc"/>
+                            <constraint firstItem="Wae-9c-QB4" firstAttribute="leading" secondItem="4ce-hf-7IS" secondAttribute="leading" id="oJP-DG-oeI"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4ce-hf-7IS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FQE-yN-v8m"/>
+                    <constraint firstItem="4ce-hf-7IS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GAt-jW-sDc"/>
+                    <constraint firstItem="4ce-hf-7IS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KJD-83-l9w"/>
+                    <constraint firstItem="4ce-hf-7IS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lD1-G8-sdm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="0e9-f7-CAP" id="y1m-8r-cfN"/>
+                <outlet property="inputStack" destination="Wae-9c-QB4" id="Olb-7o-9Dp"/>
+                <outlet property="inputTextField" destination="b9x-d2-3xn" id="tAh-qc-bCB"/>
+                <outlet property="nameLabel" destination="X8B-Zb-6mF" id="83p-zF-HdJ"/>
+                <outlet property="showStack" destination="miV-aT-wpL" id="zxU-Jz-9c4"/>
+                <outlet property="statusDot" destination="Re3-gc-fhe" id="6Pe-wN-Nl9"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

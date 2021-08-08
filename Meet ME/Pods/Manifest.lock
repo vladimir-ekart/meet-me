@@ -1,0 +1,25 @@
+PODS:
+  - JGProgressHUD (2.2)
+  - SPPermissions/Calendar (5.4.1):
+    - SPPermissions/Core
+  - SPPermissions/Contacts (5.4.1):
+    - SPPermissions/Core
+  - SPPermissions/Core (5.4.1)
+
+DEPENDENCIES:
+  - JGProgressHUD
+  - SPPermissions/Calendar
+  - SPPermissions/Contacts
+
+SPEC REPOS:
+  trunk:
+    - JGProgressHUD
+    - SPPermissions
+
+SPEC CHECKSUMS:
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  SPPermissions: a093e8045c7aeb23a08acda6d288e3543f27f8fa
+
+PODFILE CHECKSUM: 5647d3af1aee2bfcf3c1609a9eaedd2ef33bcf84
+
+COCOAPODS: 1.10.0

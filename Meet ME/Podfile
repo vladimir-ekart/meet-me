@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+target 'Meet ME' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  use_modular_headers!
+
+  # Pods for Meet ME
+
+pod 'JGProgressHUD'
+pod 'SPPermissions/Calendar'
+pod 'SPPermissions/Contacts'
+
+end
